@@ -45,11 +45,13 @@ h2 {
 h3 {
   font-size: 40px;
   line-height: 40px;
+  text-align: left;
 }
 
 h4, .addr p:first-child, .terms dt {
   font-size: 24px;
   line-height: 33px;
+  text-align: left;
 }
 
 h5 {
@@ -767,7 +769,7 @@ time + * {
 
 /*==================      Well     ======================*/
 .well {
-  padding-top: 78px;
+  padding-top: 90px;
   padding-bottom: 96px;
   border-bottom: 1px solid #CBCAC6;
 }
