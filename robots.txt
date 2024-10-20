@@ -1,0 +1,44 @@
+# Bloqueia todos os crawlers de acessar as pastas de administração
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /config/
+
+# Permite o acesso ao sitemap para ajudar na indexação correta
+Sitemap: https://www.acsoftsolutions.com.br/sitemap.xml
+
+# Bloqueia resultados de busca internos
+Disallow: /search/
+
+# Impede o acesso a arquivos confidenciais e scripts
+Disallow: /private/
+Disallow: /css/
+Disallow: /scripts/
+
+# Bloqueia arquivos sensíveis
+Disallow: /use-terms.html
+Disallow: /privacy.html
+
+# Permite o acesso de todos os crawlers relevantes a todas as outras áreas
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Bloqueia bots não relevantes
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SEMrushBot
+Disallow: /
