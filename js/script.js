@@ -96,6 +96,7 @@ include('js/jquery.easing.1.3.js');
  ========================================================*/
 var currentYear = (new Date).getFullYear();
 $(document).ready(function () {
+    jQuery.migrateMute = true;
     $("#copyright-year").text((new Date).getFullYear());
 });
 
